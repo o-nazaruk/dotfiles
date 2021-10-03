@@ -1,0 +1,154 @@
+{
+	"editor.minimap.enabled": true,
+	"window.menuBarVisibility": "hidden",
+	"explorer.confirmDelete": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.colorCustomizations": {
+		"activityBarBadge.background": "#616161",
+		"list.activeSelectionForeground": "#616161",
+		"list.inactiveSelectionForeground": "#616161",
+		"list.highlightForeground": "#616161",
+		"scrollbarSlider.activeBackground": "#61616150",
+		"editorSuggestWidget.highlightForeground": "#616161",
+		"textLink.foreground": "#616161",
+		"progressBar.background": "#616161",
+		"pickerGroup.foreground": "#616161",
+		"tab.activeBorder": "#616161",
+		"notificationLink.foreground": "#616161",
+		"editorWidget.resizeBorder": "#616161",
+		"editorWidget.border": "#616161",
+		"settings.modifiedItemIndicator": "#616161",
+		"settings.headerForeground": "#616161",
+		"panelTitle.activeBorder": "#616161",
+		"breadcrumb.activeSelectionForeground": "#616161",
+		"menu.selectionForeground": "#616161",
+		"menubar.selectionForeground": "#616161",
+		"editor.findMatchBorder": "#616161",
+		"selection.background": "#61616140",
+		"[Material Theme Darker]": {}
+	},
+	"editor.tokenColorCustomizations": {
+		"comments": "#5f5a5a"
+	},
+	"editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.wordWrap": "on",
+	"editor.trimAutoWhitespace": true,
+	"editor.fontLigatures": true,
+	"emmet.syntaxProfiles": {
+		"javascript": "jsx",
+		"xml": {
+			"attr_quotes": "single"
+		}
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/**": true,
+		"**/web/node_modules": true,
+		"**/web/build": true, // will change frequently by build command
+		"**/admin/node_modules": true
+	},
+	"emmet.triggerExpansionOnTab": true,
+	"eslint.autoFixOnSave": true,
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact"
+	],
+	"javascript.validate.enable": true,
+	"git.enableSmartCommit": true,
+	"files.trimTrailingWhitespace": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"files.exclude": {
+		"**/__pycache__": true,
+		"**/.gitignore": true,
+		"**/.vscode": true
+	},
+	"workbench.statusBar.visible": true,
+	"breadcrumbs.enabled": true,
+	"editor.quickSuggestions": true,
+	"editor.quickSuggestionsDelay": 4,
+	"sync.gist": "de82e05d4d49854b39764bfd69559230",
+	"sync.autoUpload": true,
+	"sync.quietSync": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
+	"intelephense.files.exclude": [
+		"**/.git/**",
+		"**/.svn/**",
+		"**/.hg/**",
+		"**/CVS/**",
+		"**/.DS_Store/**",
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/vendor/**/{Test,test,Tests,tests}/**",
+		"**/__pycache__/**"
+	],
+	"gitlens.codeLens.recentChange.enabled": false,
+	"workbench.activityBar.visible": true,
+	"workbench.startupEditor": "none",
+	"terminal.integrated.rendererType": "experimentalWebgl",
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"editor.formatOnSaveTimeout": 5000,
+	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
+	"phpfmt.detect_indent": true,
+	"phpfmt.enable_auto_align": true,
+	"phpfmt.psr2": false,
+	"phpfmt.psr1": true,
+	"phpfmt.yoda": true,
+	"phpfmt.visibility_order": true,
+	"phpfmt.smart_linebreak_after_curly": true,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python"
+	},
+	"editor.acceptSuggestionOnEnter": "smart",
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"files.autoSave": "onFocusChange",
+	"tabnine.experimentalAutoImports": true,
+	"phpformatter.composer": true,
+	"phpformatter.arguments": [
+		"--level=psr2"
+	],
+	"php-cs-fixer.executable": "/home/admin/tools/php-cs-fixer/vendor/bin/php-cs-fixer",
+	"workbench.colorTheme": "Material Theme Darker",
+	"window.customMenuBarAltFocus": false,
+	"mdb.confirmRunAll": false,
+	"editor.snippetSuggestions": "top",
+	"redhat.telemetry.enabled": false,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "k"],
+			"after": ["<esc>"]
+		}
+   ],
+       "vim.handleKeys": {
+        "<C-w>": false
+    },
+	"files.associations": {
+		"*.module": "php"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[vue]": {
+		"editor.defaultFormatter": "octref.vetur"
+	},
+	"editor.lineNumbers": "relative",
+	"keyboard.dispatch": "keyCode"
+}
