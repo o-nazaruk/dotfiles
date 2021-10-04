@@ -10,6 +10,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias for vscode
 alias code="vscodium"
+alias vim="nvim"
 
 # Open file in vscode
 ct() {fzf | xargs -r -I % code % ;}
