@@ -52,7 +52,7 @@ bindsym $mod+Return exec terminator
 bindsym $mod+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec "rofi -combi-modi window,drun,ssh,run -show combi -terminal gnome-terminal -icon-theme 'Papirus' -show-icons"
+bindsym $mod+d exec "~/.config/rofi/launchers/ribbon/launcher.sh"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
