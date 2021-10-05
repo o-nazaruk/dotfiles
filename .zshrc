@@ -7,19 +7,20 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
+#default editor
+export EDITOR='nvim'
+export VISUAL='vscodium'
 
 # Alias for vscode
 alias code="vscodium"
 alias vim="nvim"
 
 # Open file in vscode
-ct() {fzf | xargs -r -I % code % ;}
+ct() {find . -type f -not -path '*/\.git/*' ! -path "*/\.vscode/*"  ! -path "*/\node_modules/*" | fzf | xargs -r -I % $VISUAL % ;}
+vt() {find . -type f -not -path '*/\.git/*' ! -path "*/\.vscode/*"  ! -path "*/\node_modules/*" | fzf | xargs -r -I % $EDITOR % ;}
 
 # Alias for ranger
 ra() {ranger}
-
-
-
 
 CURRENT_BG='NONE'
 if [[ -z "$PRIMARY_FG" ]]; then
@@ -155,10 +156,6 @@ prompt_agnoster_setup() {
 }
 
 prompt_agnoster_setup "$@"
-
-#default editor
-export EDITOR='vim'
-export VISUAL='code'
 
 PATH="/home/admin/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/admin/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
