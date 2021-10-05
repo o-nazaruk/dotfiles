@@ -1,0 +1,7 @@
+#!/bin/bash
+# This script compiles markdown into pdf for easy preview in zathura. Requires pandoc, latex (texlive-latexextra), zathura
+if test -f $1; then
+    pandoc -s -f gfm -o /tmp/op.pdf $1; zathura /tmp/op.pdf
+else
+    echo "$1 does not exist"
+fi
