@@ -150,5 +150,6 @@
 		"editor.defaultFormatter": "octref.vetur"
 	},
 	"editor.lineNumbers": "relative",
-	"keyboard.dispatch": "keyCode"
+	"keyboard.dispatch": "keyCode",
+	"editor.formatOnSave": true
 }
