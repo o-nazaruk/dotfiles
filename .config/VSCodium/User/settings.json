@@ -25,7 +25,7 @@
 		"menubar.selectionForeground": "#616161",
 		"editor.findMatchBorder": "#616161",
 		"selection.background": "#61616140",
-		"[Material Theme Darker]": {}
+		"[Material Theme Darker]": {},
 	},
 	"editor.tokenColorCustomizations": {
 		"comments": "#5f5a5a"
@@ -126,7 +126,6 @@
 		"--level=psr2"
 	],
 	"php-cs-fixer.executable": "/home/admin/tools/php-cs-fixer/vendor/bin/php-cs-fixer",
-	"workbench.colorTheme": "Material Theme Darker",
 	"window.customMenuBarAltFocus": false,
 	"mdb.confirmRunAll": false,
 	"editor.snippetSuggestions": "top",
@@ -151,5 +150,14 @@
 	},
 	"editor.lineNumbers": "relative",
 	"keyboard.dispatch": "keyCode",
-	"editor.formatOnSave": true
+	"vim.useSystemClipboard": true,
+	"vim.easymotion": true,
+	"vim.leader": ",",
+	"vim.enableNeovim": true,
+	"vim.foldfix": true,
+	"vim.highlightedyank.enable": true,
+	"vim.highlightedyank.duration": 300,
+	"vim.neovimUseConfigFile": true,
+	"vim.smartRelativeLine": true,
+	"workbench.colorTheme": "Material Theme Darker",
 }
