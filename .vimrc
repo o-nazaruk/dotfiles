@@ -1,8 +1,7 @@
-inoremap jk <ESC>
-let mapleader = "'"
-syntax on 
 set number 
-set noswapfile 
-set hlsearch 
-set ignorecase 
-set incsearch 
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+augroup END

@@ -1,4 +1,4 @@
-set window-title-basename "true"
+set window-title-basename "false"
 set selection-clipboard "clipboard"
 
 # Modified Dracula color theme for Zathura

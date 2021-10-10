@@ -8,19 +8,19 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 #default editor
-export EDITOR='nvim'
+export EDITOR='lvim'
 export VISUAL='vscodium'
 
-# Alias for vscode
+# Alias for editors
 alias code="vscodium"
-alias vim="nvim"
+alias vim="lvim"
 
-# Open file in vscode
+# Open file in editors
 ct() {find . -type f -not -path '*/\.git/*' ! -path "*/\.vscode/*"  ! -path "*/\node_modules/*" | fzf | xargs -r -I % $VISUAL % ;}
 vt() {find . -type f -not -path '*/\.git/*' ! -path "*/\.vscode/*"  ! -path "*/\node_modules/*" | fzf | xargs -r -I % $EDITOR % ;}
 
 # Alias for ranger
-ra() {ranger}
+alias ra="ranger"
 
 CURRENT_BG='NONE'
 if [[ -z "$PRIMARY_FG" ]]; then
@@ -167,3 +167,5 @@ bindkey -v
 bindkey 'jk' vi-cmd-mode
 ZSH_AUTOSUGGEST_STRATEGY=(history completion )
 VI_MODE_SET_CURSOR=true
+
+alias cal="cal -m"
