@@ -145,7 +145,6 @@ mode "resize" {
 
 default_border none
 default_floating_border none
-border_radius 6
 
 for_window [class=".*"] border pixel 0
 

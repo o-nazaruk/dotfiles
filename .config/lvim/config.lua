@@ -1,6 +1,6 @@
 --[[
 lvim is the global options object
-
+  
 Linters should be
 filled in as strings with either
 a global executable or a path to
@@ -128,10 +128,17 @@ lvim.plugins = {
 vim.g.vscode_style = "dark";
 
 -- Automatically switch line numbers on mode switching
+-- Also added line wrapping
 vim.api.nvim_command([[
+set wrap linebreak nolist
 set relativenumber
 autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber 
+]]);
+
+-- On focus lost save the file
+vim.api.nvim_command([[
+au FocusLost * silent! wa
 ]]);
 
 -- NVIM tree options

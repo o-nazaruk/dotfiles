@@ -67,7 +67,11 @@ if [ -f /usr/bin/gnome-keyring-daemon ]; then
   export SSH_AUTH_SOCK
 fi
 
+# Remapping caplock to "Right" key for ZSH autocompletion
 xmodmap "$HOME/.config/swapkeys" -display :0
+
+# Setting repeating keys speed
+xset r rate 300 50
 
 # start i3 and keep it running
 if [ -f /usr/bin/i3 ]; then
